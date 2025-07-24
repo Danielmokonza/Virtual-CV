@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+
+.experience {
+  width:60%;
+  float:left;
+  position:relative;
+  font-weight:300;
+  min-height:100%;
+  min-height:100vh;
+  h3.experience-title {
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .company-wrapper {
+    width:30%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+    margin-top: 60px;
+  }
+  .job-wrapper {
+    width:70%;
+    float:left;
+    text-align:left;
+    padding-right:5%;
+    margin-bottom:60px;
+    margin-top: 60px;
+  }
+  .experience-title {
+      margin-bottom:15px;;
+    }
+}
+
+.section-padding {
+ padding:60px 60px 40px 40px;
+}
+
+.section-wrapper {
+  width:50%;
+  float:left;
+  text-align:left;
+  font-weight:300;
+  margin-bottom:20px;
+  @include breakpoint(baby-bear) {width:100%;}
+  &:nth-child(3){ 
+    padding-right:8%;
+  }
+  h3.section-title {
+    text-align:left;
+    text-transform:uppercase;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:400;
+  }
+  .skill-percentage {
+    margin-bottom:10px;
+    position:relative;
+    &::after {
+      content:"";
+      width:100%;
+      height:6px;
+      display:block;
+      margin-top:3px;
+    }
+    &::before{
+      content:"";
+      height:6px;
+      position:absolute;
+      margin-top:3px;
+      bottom:0;
+    }
+  }
+  
+}
+
+@keyframes skill_1 {from {width:0%;}to {width:80%;}}
+@keyframes skill_2 {from {width:0%;}to {width:90%;}}
+@keyframes skill_3 {from {width:0%;}to {width:50%;}}
+@keyframes skill_4 {from {width:0%;}to {width:60%;}}
+@keyframes skill_5 {from {width:0%;}to {width:70%;}}  
+@keyframes skill_6 {from {width:0%;}to {width:70%;}}
+@keyframes skill_7 {from {width:0%;}to {width:70%;}}
