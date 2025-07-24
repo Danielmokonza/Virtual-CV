@@ -15,6 +15,11 @@ Css Indexing
 /*===========================================
 Base CSS
 ============================================*/
+:root {
+
+	--percent: 100;
+  --color-gray-dark-3: #9a9a9a;
+}
 *{
   margin: 0;
   padding: 0;
@@ -321,7 +326,7 @@ Page Styles
     flex: 1;
     /* display: flex; */
     justify-content: flex-end;
-    margin: 50px 0px;
+    margin: 25px 0px;
 }
 
 .nav ul li, .nav ul li a {
@@ -506,4 +511,36 @@ Page Styles
     color: #999999;
     font-weight: 500;
     letter-spacing: 5px;
+}
+
+.detail-content {
+	user-select: none;
+}
+
+/* Programming skills section */
+.pg-list, .tool-list, .favor-list {
+	padding: 0;
+	list-style: none;
+}
+.pg-list > li {	
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+}
+.sb-skeleton {
+	position: relative;
+	flex: 1 0 auto;
+	height: 2px;
+	background-color: var(--color-gray-dark-3);
+}
+.pg-list > li > span {
+	flex: 0 0 100px;
+}
+.sb-skeleton > .skillbar {
+	position: absolute;
+	left: 0;
+	top: -1px;
+	width: var(--pgbar-length);
+	height: 4px;
+	background-color: rgba(0, 0, 0, 0.6);
 }
