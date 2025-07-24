@@ -19,6 +19,9 @@ Base CSS
 
 	--percent: 100;
   --color-gray-dark-3: #9a9a9a;
+  --color-black: #000;
+  --color-gray: #999999;
+  --color-dark-gray: #222222;
 }
 *{
   margin: 0;
@@ -91,7 +94,7 @@ p {
   margin-bottom: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  color: var(--color-black);
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
@@ -311,7 +314,7 @@ Page Styles
 .logo a {
     color: #fff;
     text-align: right;
-    background: #000;
+    background: var(--color-black);
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -337,20 +340,20 @@ Page Styles
 .nav ul li a {
     padding: 8px 0px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--color-black);
     letter-spacing: 1px;
     font-weight: 500;
     position: relative;
 }
 
 .nav ul li a:hover {
-    color: #000;
+    color: var(--color-black);
 }
 .nav ul li a:after {
     content: "";
     width: 0;
     height: 1px;
-    background: #000;
+    background: var(--color-black);
     position: absolute;
     bottom: 5px;
     left: 0;
@@ -377,7 +380,7 @@ Page Styles
 }
 
 .left-footer {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--color-black);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -418,7 +421,7 @@ Page Styles
 
 
 .social-icons ul li a:hover {
-  color: #000;
+  color: var(--color-black);
   transform: scale(1.2) translateY(-5px);
 }
 .user-profile {
@@ -428,7 +431,7 @@ Page Styles
 .sm-text {
     letter-spacing: 2.1px;
     font-weight: normal;
-    color: #222222;
+    color: var(--color-dark-gray);
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -438,7 +441,7 @@ Page Styles
     font-size: 40px;
     text-transform: uppercase;
     margin: 15px 0px;
-    color: #222222;
+    color: var(--color-dark-gray);
     font-family: "Roboto", sans-serif;
     font-weight: 600;
 }
@@ -449,7 +452,7 @@ Page Styles
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
-    color: #222222;
+    color: var(--color-dark-gray);
 }
 
 .text {
@@ -487,7 +490,7 @@ Page Styles
 }
 
 .social-icons-head ul li a:hover {
-    color: #000;
+    color: var(--color-black);
     transform: scale(1.2) translateY(-5px);
 }
 .sec-title {
@@ -500,7 +503,7 @@ Page Styles
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 1.8;
-    color: #000;
+    color: var(--color-black);
 }
 
 .pg-sub-title {
@@ -508,7 +511,7 @@ Page Styles
     display: block;
     font-size: 10px;
     text-transform: uppercase;
-    color: #999999;
+    color: var(--color-gray);
     font-weight: 500;
     letter-spacing: 5px;
 }
@@ -542,5 +545,5 @@ Page Styles
 	top: -1px;
 	width: var(--pgbar-length);
 	height: 4px;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: var(--color-black);
 }
